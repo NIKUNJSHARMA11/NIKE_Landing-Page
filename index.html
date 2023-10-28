@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,900&display=swap');
+
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: gilroy;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #main {
+        height: 100%;
+        width: 100%;
+        background-color: #D0D4D5;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #nav {
+        height: 100px;
+        width: 100%;
+        padding: 0 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #nav img {
+        height: 40px;
+        margin-right: 70px;
+    }
+
+    #nav-part1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-part1 h4 {
+        margin-right: 90px;
+        font-size: 23px;
+        text-transform: uppercase;
+        font-weight: 600;
+
+
+    }
+
+    #nav-part2 i {
+        margin-right: 45px;
+        font-size: 23px;
+        font-weight: 500;
+
+
+    }
+
+    #content {
+        width: 100%;
+        height: calc(100% - 100px);
+        display: flex;
+
+
+    }
+
+    #left {
+        width: 35%;
+        height: 100%;
+        padding: 120px 150px;
+    }
+
+    #left h5 {
+        font-size: 20px;
+        margin-bottom: 25px;
+        color: #535353;
+
+    }
+
+    #left h1 {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+
+
+    }
+
+    #left p {
+        font-size: 16px;
+        width: 70%;
+        margin-bottom: 25px;
+
+
+
+    }
+
+    #left button {
+        background-color: #000;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 600;
+        padding: 15px 45px;
+        border-radius: 50px;
+        border-top-left-radius: 0px;
+        text-transform: uppercase;
+
+    }
+
+    #right {
+        height: 100%;
+        width: 70%;
+        padding: 80px;
+        position: relative;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    #right::-webkit-scrollbar {
+        display: none;
+    }
+
+    .elm {
+
+        height: 400px;
+        width: 280px;
+        background-color: #fff;
+        position: relative;
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        margin-right: 15px;
+        display: inline-block;
+    }
+
+    .elm img {
+        height: 67%;
+        width: 100%;
+        top: 7%;
+        position: absolute;
+        object-fit: cover;
+    }
+
+   
+
+    .elm h4 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #D0D4D5;
+        padding: 17px 35px;
+        border-radius: 6px;
+    }
+
+    .elm h5 {
+        position: absolute;
+        bottom: 13%;
+        right: 0;
+        background-color: #000;
+        color: #fff;
+        font-size: 13px;
+        padding: 17px 35px;
+        border-radius: 6px;
+    }
+
+    .me:hover {
+
+        animation: forwards;
+        text-decoration: underline;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .elm:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.2s ease-in;
+    }
+
+    button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.2s ease-in;
+    }
+
+    #nav-part1 img:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.2s ease-in;
+    }
+
+    .par {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 0;
+
+
+    }
+    
+    .partest{
+         position: absolute;
+         font-family:'Montserrat',sans-serif;
+         font-size:15vw;
+         font-style: italic;
+         overflow: auto;
+
+    }
+    .partest::after{
+        content:attr(text);
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        color: transparent;
+        opacity: 5%;
+        -webkit-text-stroke:0.15vw black;
+}
+.image{
+    width: 50%;
+    animation: shoes 2s cubic-bezier(0.25, 1, 0.45, 1) infinite alternate;
+
+}
+@keyframes shoes{
+    0%, 10%{
+        transform: translate(100vw,0) rotate(15deg);
+        
+    }
+    90%,100%{
+         transform:translate(-3vw,-4vw) rotate(-15deg)
+    }
+}
+</style>
+
+<body>
+    <div id="main">
+        
+        <div id="nav">
+            <div id="nav-part1">
+                <img src="https://www.edigitalagency.com.au/wp-content/uploads/nike-logo-png-black-icon-white-background-large.png"
+                    alt="">
+                <h4 class="me">men</h4>
+                <h4 class="me">women</h4>
+                <h4 class="me">kids</h4>
+                <h4 class="me">sale</h4>
+                <h4 class="me">snkrs</h4>
+            </div>
+            <div id="nav-part2">
+                <i class="ri-search-line"></i>
+                <i class="ri-shopping-cart-line"></i>
+                <i class="ri-menu-line"></i>
+            </div>
+           
+
+        </div>
+        <div class="par">
+            <span class="partest" text="NIKE">NIKE</span>
+            <img  class="image"src="https://i.postimg.cc/qvxNYQFC/shoe.png' border='0' alt='shoe'" alt="">
+        </div>
+    </div>
+    <div id="content">
+        <div id="left">
+            <h5>Explore the limited Edition</h5>
+            <h1>Nike limited edition</h1>
+            <p>If the Shoe Fits Buy IT !</p>
+            <button type="submit">Shop Now</button>
+        </div>
+        <div id="right">
+            <div class="elm">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8095815a-7483-4e09-b520-e070c22673d4/luka-2-pf-basketball-shoes-LM9ScX.png"
+                    alt="">
+                <h4>Luka 2 PF</h4>
+                <h5>MRP : ₹ 11 895.00</h5>
+            </div>
+            <div class="elm">
+                <img src=https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ce38e3d4-7382-4d01-8984-3c5667f7e465/paris-saint-germain-jumpman-mvp-shoes-LxppNW.png
+                    alt="">
+                <h4>Germain Jumpman MVP</h4>
+                <h5>MRP : ₹ 15 295.00</h5>
+            </div>
+            <div class="elm">
+                <img src=https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d8d666d5-f68a-4488-ae2a-a7203c3e6861/air-jordan-1-low-se-shoes-H7DD5v.png
+                    alt="">
+                <h4>Air Jordan 1 Low SE</h4>
+                <h5>MRP : ₹ 10 295.00</h5>
+            </div>
+            <div class="elm">
+                <img src=https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6760a13e-0204-4eda-b08c-817e35bf52ac/air-jordan-legacy-312-low-shoes-6Vd4Xl.png
+                    alt="">
+                <h4>Air Jordan Legacy 312 Low</h4>
+                <h5>MRP : ₹ 12 995.00</h5>
+            </div>
+            <div class="elm">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1413d1f8-8f4d-43c3-92a4-bb3fe9e3c07d/air-jordan-xxxviii-fiba-pf-basketball-shoes-XnhFhP.png"
+                    alt="">
+                <h4>Air Jordan XXXVIII</h4>
+                <h5>MRP : ₹ 18 395.00</h5>
+            </div>
+            <div class="elm">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/195382b3-7ff3-4b51-98e6-74f1a3f9f186/jordan-nu-retro-1-low-shoes-8294mJ.png"
+                    alt="">
+                <h4>Jordan Nu Retro 1 Low</h4>
+                <h5>MRP : ₹ 9 195.00</h5>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
